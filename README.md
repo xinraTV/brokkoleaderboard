@@ -1,4 +1,4 @@
-# Brokkoleaderboard 🥦
+# Brokkoleaderboard 🥦 ![Node.js CI](https://github.com/xinraTV/brokkoleaderboard/workflows/Node.js%20CI/badge.svg)
 
 This is a script for the [Streamlabs Chabot](https://streamlabs.com/chatbot).
 
