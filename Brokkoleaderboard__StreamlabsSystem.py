@@ -37,7 +37,7 @@ def Execute(data):
 
 def Tick():
     global lastUpdate
-    if time.time() >= lastUpdate + 10:
+    if time.time() >= lastUpdate + 1:
         lastUpdate = time.time()
         with codecs.open(os.path.join(os.path.dirname(__file__), "toplist.json"), encoding="utf-8-sig", mode="w+") as f:
             json.dump(Parent.GetTopCurrency(10), f, encoding="utf-8")
