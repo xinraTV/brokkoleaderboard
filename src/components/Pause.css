@@ -1,0 +1,58 @@
+.container {
+  padding: 50px;
+}
+
+.item {
+  background-color: rgba(163, 163, 163, 0.219);
+  margin-bottom: 16px;
+  width: 500px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user {
+  padding: 16px;
+}
+
+.item h3 {
+  margin-top: 0;
+}
+
+.rank {
+  width: 150px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.star-1 {
+  position: absolute;
+  font-size: 120px;
+  top: -42px;
+  color: #fee101;
+  left: 25px;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.star-2 {
+  position: absolute;
+  font-size: 100px;
+  top: -27px;
+  color: #d7d7d7;
+  left: 33px;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.star-3 {
+  position: absolute;
+  font-size: 82px;
+  top: -12px;
+  color: #d6af36;
+  left: 40px;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}

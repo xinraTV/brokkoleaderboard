@@ -43,5 +43,5 @@ def Tick():
         #     json.dump(Parent.GetTopCurrency(10), f, encoding="utf-8")
         with codecs.open(os.path.join(os.path.dirname(__file__), "toplist.js"), encoding="utf-8-sig", mode="w+") as f:
             f.write("window.setToplist({0});".format(json.dumps(
-                Parent.GetTopCurrency(10), encoding='utf-8')))
+                Parent.GetTopCurrency(7), encoding='utf-8')))
     return

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Pause } from './components/Pause'
 import './App.css'
 
 const devTopList = [
@@ -18,7 +19,9 @@ function refreshToplist() {
 }
 
 function App() {
-  const [toplist, setToplist] = useState(devTopList)
+  const [toplist, setToplist] = useState(
+    process.env.NODE_ENV === 'production' ? [] : devTopList
+  )
   window.setToplist = (data) => {
     const newTopList = []
     for (const username of Object.keys(data)) {
@@ -28,14 +31,13 @@ function App() {
     setToplist(newTopList)
   }
   useEffect(() => {
-    refreshToplist()
+    if (process.env.NODE_ENV === 'production') {
+      refreshToplist()
+      const intervalId = setInterval(refreshToplist, 3000)
+      return () => clearInterval(intervalId)
+    }
   }, [])
-  return (
-    <div className="App">
-      <h1>Brokkoleaderboard</h1>
-      {JSON.stringify(toplist)}
-    </div>
-  )
+  return <Pause toplist={toplist}></Pause>
 }
 
 export default App
