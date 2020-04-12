@@ -16,7 +16,7 @@ clr.AddReference("IronPython.Modules.dll")
 # ---------------------------
 ScriptName = "Brokkoleaderboard"
 Website = "https://github.com/xinraTV/brokkoleaderboard"
-Description = "Right click -> insert api key"
+Description = "Overlay for displaying currency toplist"
 Creator = "xinraTV"
 Version = "1.0.0"
 
