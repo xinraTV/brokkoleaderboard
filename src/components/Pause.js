@@ -29,7 +29,12 @@ class ToplistItem extends React.Component {
         <div className="rank">{this.props.rank}</div>
         <div className="user">
           <h3>{this.props.user.username}</h3>
-          <span className="points">{this.props.user.points} 🥦</span>
+          <span className="points">
+            {this.props.user.points}{' '}
+            <span role="img" aria-labelledby="Brokkoli">
+              🥦
+            </span>
+          </span>
         </div>
       </div>
     )
