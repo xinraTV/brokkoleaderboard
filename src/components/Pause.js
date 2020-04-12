@@ -24,12 +24,12 @@ class ToplistItem extends React.Component {
     return (
       <div className="item">
         {this.props.rank < 4 ? (
-          <span class={`star-${this.props.rank}`}>★</span>
+          <span className={`star-${this.props.rank}`}>★</span>
         ) : null}
         <div className="rank">{this.props.rank}</div>
         <div className="user">
           <h3>{this.props.user.username}</h3>
-          <span class="points">{this.props.user.points} 🥦</span>
+          <span className="points">{this.props.user.points} 🥦</span>
         </div>
       </div>
     )
