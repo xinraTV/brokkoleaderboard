@@ -1,4 +1,4 @@
-# Brokkoleaderboard 🥦 ![Node.js CI](https://github.com/xinraTV/brokkoleaderboard/workflows/Node.js%20CI/badge.svg) ![Twitch Status](https://img.shields.io/twitch/status/xinraTV)
+# Brokkoleaderboard 🥦 ![Node.js CI](https://github.com/xinraTV/brokkoleaderboard/workflows/Node.js%20CI/badge.svg) [![Twitch Status](https://img.shields.io/twitch/status/xinratv)](https://www.twitch.tv/xinratv)
 
 This is a script for the [Streamlabs Chabot](https://streamlabs.com/chatbot).
 
